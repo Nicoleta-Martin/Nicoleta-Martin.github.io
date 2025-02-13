@@ -5,7 +5,7 @@ date: 2023
 img: ceas.png
 alt: image-alt
 project-date: December 2023
-author: Start Bootstrap
+author: Martin Daniela - Nicoleta
 category: IoT Project
 language: C in Arduino IDE
 description: This is a smart device designed to monitorize the air quality in my room. It is very important to see how values of TVOC are changing when there are some pollution factors such as perfumes, cleaning products (that contains chemical substances) etc. The measured data are then sent to ThingBoard platform where it can be easily observed the values from the entire month, using diagrams. 
