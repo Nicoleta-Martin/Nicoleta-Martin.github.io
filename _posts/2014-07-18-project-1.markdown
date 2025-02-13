@@ -11,5 +11,5 @@ author: Martin Daniela - Nicoleta
 category: IoT Project
 language: C in Arduino IDE
 diagram: diagram_project1.png
-source:
+source: https://github.com/Nicoleta-Martin/Air-Quality-Monitor-Device-
 ---
