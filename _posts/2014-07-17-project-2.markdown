@@ -1,12 +1,10 @@
 ---
 layout: default
-title: Incercare
+title: Smart Trash Bin
 modal-id: 2
-date: 2014-07-17
-img: ceas.png
-alt: image-alt
-project-date: April 2014
-author: incercare
-category: Web Development
-description: text text text 
+date: 15-05-2024
+img: trash_bin.png
+alt: photo with a smart trash bin
+project-date: May 2024
+category: Home Automation
 ---
