@@ -9,7 +9,7 @@ author: Start Bootstrap
 category: IoT Project
 language: C in Arduino IDE
 description: This is a smart device designed to monitorize the air quality in my room. It is very important to see how values of TVOC are changing when there are some pollution factors such as perfumes, cleaning products (that contains chemical substances) etc. The measured data are then sent to ThingBoard platform where it can be easily observed the values from the entire month, using diagrams.
-The assembly diagram contains:
+The assembly diagram contains
    -ESP8266 module-> the main avantage of this microcontroller is that it is possible to connect it to WiFi.
    -Nokia Display 38x48 to display information such as the current time and date, temperature (in degree Celsius), room's humidity, air quality status (clean, tvoc/eco2 index exceeded, air polluted) and the value of the tvoc & eco2 index
    -DHT11 sensor that measures temperature and humidity from the inside
