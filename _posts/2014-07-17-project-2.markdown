@@ -10,5 +10,5 @@ project-date: May 2024
 category: Home Automation
 language: C in Arduino IDE
 diagram: diagram_project2.png
-source:
+source: https://github.com/Nicoleta-Martin/Smart-Bin
 ---
