@@ -19,6 +19,10 @@
             {% if post.description %}
             <p>{{ post.description }}</p>
             {% endif %}
+             {% if post.diagram %}
+            <p>Assembly Diagram</p>
+            <img src ="img/portofolio/{{post.diagram}}" align-items =center>
+            {% endif %}
             <ul class="list-inline item-details">
               {% if post.author %}
               <li>Author:
@@ -33,6 +37,11 @@
               {% if post.category %}
               <li>Category:
                 <strong>{{ post.category }}</strong>
+              </li>
+              {% endif %}
+                 {% if post.language %}
+              <li>Programming Language:
+                <strong>{{ post.language }}</strong>
               </li>
               {% endif %}
             </ul>
