@@ -15,7 +15,7 @@
           <div class="modal-body">
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
-            <img src="img/portfolio/{{ post.content-img }}" class="img-responsive img-centered" alt="{{ post.alt }}" width = "320" height = "120">
+            <img src="img/portfolio/{{ post.content-img }}" class="img-responsive img-centered img-fluid" alt="{{ post.alt }}" style="max-width: 100%; height: auto;" width = "320" height = "120">
             {% if post.modal-id == 1 %}
             <p style="font-size: 18px;">This is a smart device designed to monitor the air quality in my room. It is very important to see how TVOC values are changing when there are some pollution factors such as perfumes, cleaning products (that contain chemical substances) etc. The measured data is then sent to a ThingBoard server where it can be easily observed the values from the entire month, using diagrams.</p>
      <p style="font-size: 16px" align = "left" >The assembly diagram contains:</p>
