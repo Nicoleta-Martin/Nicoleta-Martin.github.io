@@ -2,7 +2,7 @@
 layout: default
 title: Air Quality Device
 modal-id: 1
-date: 2023
+date: 01-10-2023
 img: ceas.png
 alt: image-alt
 project-date: December 2023
