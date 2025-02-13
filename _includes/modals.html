@@ -42,6 +42,9 @@
             <p>Assembly Diagram</p>
             <img src ="img/portfolio/{{post.diagram}}" align-items =center>
             {% endif %}
+            {% if post.source%}
+            <p><a href = {{post.source}}>Source Code</a></p>
+            {%endif%}
             <ul class="list-inline item-details">
               {% if post.author %}
               <li>Author:
