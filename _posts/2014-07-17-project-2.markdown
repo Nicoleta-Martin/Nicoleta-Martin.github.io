@@ -7,4 +7,7 @@ img: trash_bin.png
 alt: photo with a smart trash bin
 project-date: May 2024
 category: Home Automation
+language: C in Arduino IDE
+diagram: diagram_project2.png
+source:
 ---
