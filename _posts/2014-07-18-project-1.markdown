@@ -4,6 +4,7 @@ title: Air Quality Device
 modal-id: 1
 date: 01-10-2023
 img: ceas.png
+content-img: carcasa.jpg
 alt: image-alt
 project-date: December 2023
 author: Martin Daniela - Nicoleta
