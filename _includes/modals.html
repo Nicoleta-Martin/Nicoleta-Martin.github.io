@@ -17,16 +17,16 @@
             <hr class="star-primary">
             <img src="img/portfolio/{{ post.content-img }}" class="img-responsive img-centered img-fluid" alt="{{ post.alt }}" style="max-width: 100%; height: auto;" width = "320" height = "120">
             {% if post.modal-id == 1 %}
-            <p style="font-size: 18px;">This is a smart device designed to monitor the air quality in my room. It is very important to see how TVOC values are changing when there are some pollution factors such as perfumes, cleaning products (that contain chemical substances) etc. The measured data is then sent to a ThingBoard server where it can be easily observed the values from the entire month, using diagrams.</p>
-     <p style="font-size: 16px" align = "left" >The assembly diagram contains:</p>
-     <p style="font-size: 16px" align = "left" >-<a href ="https://octopart.com/datasheet/esp8266-espressif+systems-109669109?msclkid=4e65e03402411f48f43a879a02268ad3&utm_source=bing&utm_medium=cpc&utm_campaign=b_cpc_emea-ro_search_dsa_english_en_usd_all-categories&utm_term=semiconductors&utm_content=Discrete%20Semiconductors%20DSA" target="_blank">ESP8266 module</a>-> the main advantage of this microcontroller is that it can be connected to WiFi.</p>
-     <p style="font-size: 16px" align= "left" > -<a href ="https://cdn-learn.adafruit.com/downloads/pdf/nokia-5110-3310-monochrome-lcd.pdf" target="_blank">Nokia Display 84x48</a> to display information such as the current time and date, temperature (in degrees Celsius), room's humidity, air quality status (clean, tvoc/eco2 index exceeded, air polluted) and the value of the tvoc & eco2 indices </p>
-     <p style="font-size: 16px" align = "left" > -<a href = "https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf" target="_blank">DHT11</a> sensor that measures temperature and humidity from the inside</p>
-     <p style="font-size: 16px" align = "left" > -<a href = "https://cdn.sparkfun.com/assets/2/c/c/6/5/CN04-2019_attachment_CCS811_Datasheet_v1-06.pdf" target="_blank">CCS811 sensor</a> used for measuring the values for TVOC (Total Volatile Organic Compounds) or ECO2 index.</p>
+            <p style="font-size: 18px;">Acesta este un dispozitiv smart proiectat pentru a monitoriza calitatea aerului din camera mea. Este foarte important să poți măsura nivelul de TVOC și să observi cum se schimbă acest indice atunci când există factori de poluare precum parfumuri, produse de curățenie( care conțin substanțe chimice) etc. Valorile măsurate sunt apoi trimise către un server ThingsBoard unde se pot observa cu ușurință valorile transmise pe întreaga săptămână, reprezentate sub formă de grafice.</p>
+     <p style="font-size: 16px" align = "left" >Schema de asamblare conține: </p>
+     <p style="font-size: 16px" align = "left" >-o plăcuță ESP8266-> Avantajul principal este acela că are posibilitatea de a se conecta la WiFi</p>
+     <p style="font-size: 16px" align= "left" >-Nokia Display 84x48-Pentru a afișa local diverse informații precum ora și data curente, temperatura (în grade Celsius), umiditatea din cameră, starea calității aerului (aer curat, indice TVOC/eCO2 depășit, aer poluat), dar și valorile indicilor TVOC & eCO2. </p>
+     <p style="font-size: 16px" align = "left" >-DHT11 - senzor care măsoară temperatura și umiditatea de la interior</p>
+     <p style="font-size: 16px" align = "left" >-CCS811- senzor folosit pentru măsurarea valorilor de TVOC (Total Volatile Organic Compounds) și eCO2.</p>
      <br><br>
-      <p style="font-size: 16px" align = "left" >The data is sent to a ThingsBoard server every 5 minutes. There, graphs can be viewed for each parameter of interest, and the data is displayed over a 7-day period, allowing careful observation of the indices' variations.</p>
+      <p style="font-size: 16px" align = "left" >Valorile preluate de la senzori sunt trimise către un server Thingsboard la fiecare 5 minute (în funcție de delay sau de pachete ratate pot ajunge mai mult sau mai puțin de 288 de valori). Aici, graficele pot fi vizualizate individual pentru fiecare parametru de interes, permițând observația atentă a variațiilor indicilor măsurați.</p>
       <div>
-        <h4>Example of Graphs from ThingsBoard</h4>
+        <h4>Exemple de grafice preluate de la server-ul ThingsBoard</h4>
       <img src = "img/temperatura.png"class="img-fluid" style="max-width: 100%; height: auto;" width="520" height="220">
         <br>
         <img src = "img/humidity.png" class="img-fluid" style="max-width: 100%; height: auto;" width="520" height="220">
@@ -35,15 +35,22 @@
         <br>
         <img src = "img/eco2.png" class="img-fluid" style="max-width: 100%; height: auto;" width="520" height="220">
       </div> 
-        <h4>WiFi Connection</h4>
-       <p style="font-size: 16px" align = "left" > If the ESP board detects a network for which it already has saved credentials, then the connection is established without intervention. Otherwise, if no known network is found, a local network called AutoConnectAP will be created. This will open a page based on the local IP address where new credentials (SSID, password) can be entered, which the ESP8266 board will use to connect to WiFi.</p>
+        <h4>Conexiunea WiFi</h4>
+       <p style="font-size: 16px" align = "left" >Dacă plăcuța ESP detectează o conexiune la internet pentru care avea deja salvate credențialele, atunci conexiunea este stabilită fără intervenție. Altfel, dacă nu se găsește o rețea cunoscută, atunci se creează o rețea locală denumită "AutoConnectAP". Aceasta va deschide o pagin[, bazat[ pe adresa IP locală, unde se pot introduce credențialele pentru noua conexiune (ssid, parola), la care se va conecta plăcuța ESP8266.</p>
             {% endif %}
              {% if post.diagram %}
-            <p>Assembly Diagram</p>
+            <p>Schema de asamblare</p>
             <img src ="img/portfolio/{{post.diagram}}" align-items =center class="img-fluid" style="max-width: 100%; height: auto;">
             {% endif %}
+        {% if post.modal-id == 1 %}
+            <h4>Câteva dintre abilitățile dobândite</h4>  
+              <p style="font-size: 16px" align = "left"> Dezvoltând acest proiect am reușit să învăț cum pot conecta mai mulți senzori de la care să pot prelua date și să le transmit către un server.</p>
+            <p style="font-size: 16px" align = "left"> Am aprofundat concepte importante despre IoT, reușind să integrez atât partea hardware, cât și partea software</p>
+             <p style="font-size: 16px" align = "left">Am dobândit experiență în lucrul cu microcontroller-ele și în configurarea acestora</p>
+            <p style="font-size: 16px" align = "left">Am reușit să proiectez designul 3D al carcasei folosind Thinkercad </p>
+            {%endif%} 
             {% if post.source%}
-            <p><a href = {{post.source}}>Source Code</a></p>
+            <p><a href = {{post.source}}>Cod sursă</a></p>
             {%endif%}
             <ul class="list-inline item-details">
               {% if post.author %}
