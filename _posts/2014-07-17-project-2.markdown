@@ -6,9 +6,9 @@ content-img: real_bin.png
 date: 15-05-2024
 img: trash_bin.png
 alt: photo with a smart trash bin
-project-date: May 2024
+project-date: Mai 2024
 category: Home Automation
-language: C in Arduino IDE
+language: C++ în Arduino IDE
 diagram: diagram_project2.png
 source: https://github.com/Nicoleta-Martin/Smart-Bin
 ---
