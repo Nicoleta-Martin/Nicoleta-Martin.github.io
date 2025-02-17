@@ -17,7 +17,7 @@
             <hr class="star-primary">
             <img src="img/portfolio/{{ post.content-img }}" class="img-responsive img-centered img-fluid" alt="{{ post.alt }}" style="max-width: 100%; height: auto;" width = "320" height = "120">
             {% if post.modal-id == 1 %}
-            <p style="font-size: 18px;">Acesta este un dispozitiv smart proiectat pentru a monitoriza calitatea aerului din camera mea. Este foarte important să poți măsura nivelul de TVOC și să observi cum se schimbă acest indice atunci când există factori de poluare precum parfumuri, produse de curățenie( care conțin substanțe chimice) etc. Valorile măsurate sunt apoi trimise către un server ThingsBoard unde se pot observa cu ușurință valorile transmise pe întreaga săptămână, reprezentate sub formă de grafice.</p>
+     <p style="font-size: 18px;">Acesta este un dispozitiv smart proiectat pentru a monitoriza calitatea aerului din camera mea. Este foarte important să poți măsura nivelul de TVOC și să observi cum se schimbă acest indice atunci când există factori de poluare precum parfumuri, produse de curățenie( care conțin substanțe chimice) etc. Valorile măsurate sunt apoi trimise către un server ThingsBoard unde se pot observa cu ușurință valorile transmise pe întreaga săptămână, reprezentate sub formă de grafice.</p>
      <p style="font-size: 16px" align = "left" >Schema de asamblare conține: </p>
      <p style="font-size: 16px" align = "left" >-o plăcuță ESP8266-> Avantajul principal este acela că are posibilitatea de a se conecta la WiFi</p>
      <p style="font-size: 16px" align= "left" >-Nokia Display 84x48-Pentru a afișa local diverse informații precum ora și data curente, temperatura (în grade Celsius), umiditatea din cameră, starea calității aerului (aer curat, indice TVOC/eCO2 depășit, aer poluat), dar și valorile indicilor TVOC & eCO2. </p>
@@ -38,6 +38,26 @@
         <h4>Conexiunea WiFi</h4>
        <p style="font-size: 16px" align = "left" >Dacă plăcuța ESP detectează o conexiune la internet pentru care avea deja salvate credențialele, atunci conexiunea este stabilită fără intervenție. Altfel, dacă nu se găsește o rețea cunoscută, atunci se creează o rețea locală denumită "AutoConnectAP". Aceasta va deschide o pagin[, bazat[ pe adresa IP locală, unde se pot introduce credențialele pentru noua conexiune (ssid, parola), la care se va conecta plăcuța ESP8266.</p>
             {% endif %}
+         {% if post.modal-id == 2 %}
+     <p style="font-size: 18px;">Acesta este un proiect realizat în echipă, în cadrul materiei "Mașini electrice și acționări" și presupune automatizarea completă a unui coș de gunoi pentru uz casnic, realizat în tematica Smart Home</p>
+     <p style="font-size: 16px" align = "left" >Schema de asamblare conține: </p>
+     <p style="font-size: 16px" align = "left" >-O plăcuță Arduino UNO = pentru încărcarea codului</p>
+     <p style="font-size: 16px" align= "left" >-2 servo-motoare= unul pentru ridicarea capacului și unul pentru ridicarea găleții</p>
+     <p style="font-size: 16px" align = "left" >-un switch ON/OFF = pentru acționarea servomotorului pentru ridicarea găleții</p>
+     <p style="font-size: 16px" align = "left" >-un senzor cu ultrasunete = măsoară distanța de la coș la utilizator, iar atunci când este sub pragul impus, acționează servomotorul care deschide capacul.</p>
+     <p style="font-size: 16px" align = "left" >-un senzor IR = măsoară nivelul deșeurilor din coș</p>
+     <p style="font-size: 16px" align = "left" >-un buzzer= folosit pentru alertarea utilizatorului în caz că nivelul deșeurilor depășește pragul impus senzorului IR</p>
+            <br><br>
+      <h4>Principiul de funcționare</h4>
+      <p style="font-size: 16px" align = "left" >Principiul de funcționare este următorul: Atunci când utilizatorul se află în apropierea
+ coșului, semn că ar vrea să îl folosească, se deschide capacul acționat de un servo-motor(
+de la poziția de 0 la 90 de grade). Distanța este măsurată cu ajutorul unui senzor cu
+ ultrasunete. Pe lateralul coșului am amplasat un switch care atunci când este acționat și
+ capacul deschis, ridică găleata pentru a facilita golirea coșului, folosind tot un servomotor,
+ dar localizat la baza coșului. Pe interior, amplasat pe capac, se găsește un senzor cu IR
+ care anunță utilizatorul, cu ajutorul unui buzzer, atunci când coșul este plin și depășește
+ limita de măsurare impusă senzorului.</p>
+          {% endif %}  
              {% if post.diagram %}
             <p>Schema de asamblare</p>
             <img src ="img/portfolio/{{post.diagram}}" align-items =center class="img-fluid" style="max-width: 100%; height: auto;">
@@ -48,7 +68,15 @@
             <p style="font-size: 16px" align = "left"> Am aprofundat concepte importante despre IoT, reușind să integrez atât partea hardware, cât și partea software</p>
              <p style="font-size: 16px" align = "left">Am dobândit experiență în lucrul cu microcontroller-ele și în configurarea acestora</p>
             <p style="font-size: 16px" align = "left">Am reușit să proiectez designul 3D al carcasei folosind Thinkercad </p>
-            {%endif%} 
+            {%endif%}
+           {% if post.modal-id == 2 %}
+            <h4>Câteva dintre abilitățile dobândite</h4>  
+              <p style="font-size: 16px" align = "left">Dezvoltând acest proiect am reușit să proiectăm un produs complet integrat pentru utilizarea în viața de zi cu zi.</p>
+            <p style="font-size: 16px" align = "left"> Am reușit să dezvolt concepte importante despre integrarea senzorilor multipli și a design-ului mecatronic într-un sistem de alimentare portabil.</p>
+             <p style="font-size: 16px" align = "left">Mi-am îmbunătățit capacitățile de colaborare și lucru în echipă, prin împărțirea și coordonarea sarcinilor.</p>
+             <p style="font-size: 16px" align = "left">Am aprofundat noțiunile de depanare hardware și software, depășind problemele tehnice apărute ( componente prea mari, incompatibile cu carcasa, motoare prea slabe pentru acționarea elementelor etc.)</p>
+{%endif%}
+            
             {% if post.source%}
             <p><a href = {{post.source}}>Cod sursă</a></p>
             {%endif%}
