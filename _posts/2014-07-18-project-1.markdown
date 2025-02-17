@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Air Quality Monitor Device
+title: Dispozitiv de monitorizare a calității aerului la interior
 modal-id: 1
 date: 01-10-2023
 img: ceas.png
 content-img: carcasa.jpg
 alt: image-alt
-project-date: December 2023
+project-date: Decembrie 2023
 author: Martin Daniela - Nicoleta
-category: IoT Project
-language: C in Arduino IDE
+category: Proiect IoT
+language: C++ în Arduino IDE
 diagram: diagram_project1.png
 source: https://github.com/Nicoleta-Martin/Air-Quality-Monitor-Device-
 ---
