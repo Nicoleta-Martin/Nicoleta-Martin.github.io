@@ -1,5 +1,6 @@
 <!-- Portfolio Modals -->
 {% for post in site.posts %}
+  {%if post.modal-id >=1 && post.modal-id <=3 %}
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
   aria-hidden="true">
   <div class="modal-content">
@@ -110,4 +111,5 @@ de la poziția de 0 la 90 de grade). Distanța este măsurată cu ajutorul unui 
     </div>
   </div>
 </div>
+    {%endif%}
 {% endfor %}
